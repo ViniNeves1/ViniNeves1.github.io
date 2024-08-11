@@ -284,6 +284,7 @@ footer .container {
 
     .painel {
         width: auto;
+        display: inline-block;
     }
 
     .painel li {
@@ -292,6 +293,10 @@ footer .container {
 
     .painel img {
         width: 100%;
+    }
+
+    footer {
+        padding-bottom: -50px;
     }
 }
 

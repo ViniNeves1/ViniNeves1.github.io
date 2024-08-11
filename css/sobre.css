@@ -81,3 +81,35 @@ header {
     bottom: 0;
     right: 0;
 }
+
+@media (min-widht: 939px) {
+    body {
+        width: 96%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h1 img {
+        max-width: 50%;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #centro-distribuicao {
+        width: 50%;
+    }
+}
