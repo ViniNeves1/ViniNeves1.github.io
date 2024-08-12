@@ -15,6 +15,10 @@
   border: 6px solid rgba(0, 0, 0, 0.3);
 }
 
+.cores label {
+  position: relative;
+}
+
 .cores label img {
   color: #333;
   line-height: 1.3;
