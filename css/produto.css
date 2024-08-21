@@ -4,8 +4,12 @@
   top: 30px;
   border: 6px solid rgba(0, 0, 0, 0);
   transition: 1s;
-  content: "";
+  content: '';
+  border-radius: 50%;
+  display: block;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
 .cores label:hover::after {
@@ -17,20 +21,8 @@
   padding-top: 90px;
 }
 
-.cores::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-
 .cores input:checked + label::after {
   border: 6px solid rgba(0, 0, 0, 0.3);
-}
-
-.cores label {
-  position: relative;
 }
 
 .cores label img {
@@ -100,3 +92,31 @@ label[for=azul]::after {
   left: 120px;
 }
 
+@media (min-widht: 630px) {
+  .produto {
+    position: relative;
+    padding-left: 40%;
+  }
+
+  .cores {
+    position: static;
+    padding: 0;
+  }
+
+  .cores legend {
+    position: static;
+  }
+
+  .cores label img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 35%;
+    max-height: 100%;
+  }
+
+  .cores label:after {
+    position: static;
+    float: left;
+  }
+}
