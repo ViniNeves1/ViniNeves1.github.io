@@ -132,6 +132,22 @@ thead th {
 td {
   padding: 0.3em;
 }
+
+tr:nth-child(2n) {
+  background-color: #CCC;
+}
+
+td:first-child {
+  font-style: italic;
+}
+
+.produto-back {
+  background-color: #F2F2F2;
+  margin-top: 1.2em;
+  border-top: 2px solid #CCC;
+}
+
+
 @media (min-width: 500px) {
   .detalhes {
     font-size: 1.2em;
@@ -159,6 +175,7 @@ td {
     left: 0;
     max-width: 35%;
     max-height: 100%;
+    border: 2px solid #CCC;
   }
 
   .cores label:after {
