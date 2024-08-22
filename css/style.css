@@ -248,7 +248,7 @@ footer .container {
     position: relative;
 }
 
-@media (max-widht: 939px) {
+@media (max-width: 939px) {
     .container {
         width: 96%;
     }
@@ -300,7 +300,7 @@ footer .container {
     }
 }
 
-@media (min-widht: 480px) {
+@media (min-width: 480px) {
     header h1 {
         margin: 5px 0;
     }
@@ -315,7 +315,7 @@ footer .container {
     }
 }
 
-@media (min-widht: 720px) {
+@media (min-width: 720px) {
     header h1 {
         text-align: left;
     }
