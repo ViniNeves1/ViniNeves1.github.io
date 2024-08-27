@@ -55,7 +55,7 @@
     margin: 10px;
 }
 
-.busca input [type=search] {
+.busca input[type=search] {
     width: 170px;
 }
 
@@ -131,7 +131,7 @@
     width: 445px;
     border-radius: 4px;
     box-shadow: 1px 1px 4px #999;
-    box-shadow: inset 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px #999
 }
 
 .painel li {
@@ -296,7 +296,7 @@ footer .container {
     }
 
     footer {
-        padding-bottom: -50px;
+        padding-bottom: 50px;
     }
 }
 
