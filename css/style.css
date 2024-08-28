@@ -164,6 +164,7 @@
     padding-bottom: 10px;
     transition: 0.7s ease-out;
     padding-left: 10px;
+    margin-right: 50px;
 }
 
 .painel li:hover {
@@ -269,6 +270,14 @@ footer {
 
 footer .container {
     position: relative;
+}
+
+.painel li:nth-child(n+7) {
+    display: none;
+}
+
+.painel-aberto li:nth-child(n+7) {
+    display: inline-block;
 }
 
 @media (max-width: 939px) {
