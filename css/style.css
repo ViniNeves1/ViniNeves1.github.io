@@ -184,7 +184,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
-    
+    font-family: 'Bad Script', sans-serif;
 }
 
 .painel a {
@@ -255,7 +255,7 @@
 
 body {
     color: #333333;
-    font-family: "Lucinda sans unicode", "Lucida Grande", sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 header {
