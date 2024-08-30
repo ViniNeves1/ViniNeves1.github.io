@@ -1,3 +1,46 @@
+.painel {
+    margin: 100px 0;
+    padding: 10px;
+    width: 445px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px #999;
+    
+    li {
+        display: inline-block;
+        vertical-align: top;
+        width: 140px;
+        margin: 2px;
+        padding-bottom: 10px;
+        transition: 0.7s ease-out;
+        padding-left: 10px;
+        margin-right: 50px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 5px #333;
+            transition: 0.7s ease-in;
+            transform: scale(1.2) rotate(-5deg);
+
+            &:nth-child(2n) {
+                transform: scale(1.2) rotate(5deg);
+            }
+        }
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+        font-family: 'Bad Script', sans-serif;
+        
+        &:before {
+            
+        }
+    }
+   
+}
 .sacola {
     background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
@@ -145,46 +188,6 @@
     border-left: 25px solid #900;
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
-}
-
-.painel {
-    margin: 100px 0;
-    padding: 10px;
-    width: 445px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px #999;
-    box-shadow: inset 1px 1px 4px #999
-}
-
-.painel li {
-    display: inline-block;
-    vertical-align: top;
-    width: 140px;
-    margin: 2px;
-    padding-bottom: 10px;
-    transition: 0.7s ease-out;
-    padding-left: 10px;
-    margin-right: 50px;
-}
-
-.painel li:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 5px #333;
-    transition: 0.7s ease-in;
-    transform: scale(1.2) rotate(-5deg);
-}
-
-.painel li:nth-child(2n):hover {
-    transform: scale(1.2) rotate(5deg);
-}
-
-.painel h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
-    font-family: 'Bad Script', sans-serif;
 }
 
 .painel a {
