@@ -1,3 +1,19 @@
+@escuro: #333333;
+
+.transicao(@propriedades, @tempo) {
+    -webkit-transition: @propriedades @tempo;
+    -moz-transition: @propriedades @tempo;
+	-ms-transition: @propriedades @tempo;
+	-o-transition: @propriedades @tempo;
+	transition: @propriedades @tempo;
+}
+
+.gradiente(@cor1, @cor2) {
+    background: @cor1; /* Navegadores antigos */
+    background: -moz-linear-gradient(top, @cor1 0%, @cor2 100%); /* FF 3.6+ */
+    background: -webkit-gradient(); /* Chrome, Safari4+ */
+}
+
 .painel {
     margin: 100px 0;
     padding: 10px;
@@ -12,15 +28,15 @@
         width: 140px;
         margin: 2px;
         padding-bottom: 10px;
-        transition: 0.7s ease-out;
         padding-left: 10px;
         margin-right: 50px;
+        .transicao(all, 0.7s);
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 5px #333;
-            transition: 0.7s ease-in;
             transform: scale(1.2) rotate(-5deg);
+            .transicao(all, 0.7s);
 
             &:nth-child(2n) {
                 transform: scale(1.2) rotate(5deg);
@@ -36,10 +52,16 @@
         font-family: 'Bad Script', sans-serif;
         
         &:before {
-            
+            content: '\2756';
+            padding: 5px;
         }
     }
-   
+    a {
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+    }
 }
 .sacola {
     background-image: url(../img/sacola.png);
@@ -145,7 +167,7 @@
 }
 
 .menu-departamentos a {
-    color: #333333;
+    color: @escuro;
     text-decoration: none;
 }
 
@@ -190,21 +212,11 @@
     border-top: 15px solid transparent;
 }
 
-.painel a {
-    color: #333;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 .novidades {
     background-color: #F5DCDC;
     background: linear-gradient(#F5DCDC, #BEBEF4);
-}
-
-.novidades h2:before {
-    content: '\2756';
-    padding: 5px;
 }
 
 .mais-vendidos {
@@ -257,7 +269,7 @@
 }
 
 body {
-    color: #333333;
+    color: @escuro;
     font-family: 'PT Sans', sans-serif;
 }
 
