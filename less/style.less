@@ -11,7 +11,16 @@
 .gradiente(@cor1, @cor2) {
     background: @cor1; /* Navegadores antigos */
     background: -moz-linear-gradient(top, @cor1 0%, @cor2 100%); /* FF 3.6+ */
-    background: -webkit-gradient(); /* Chrome, Safari4+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @cor1), color-stop(100%, @cor2)); /* Chrome, Safari4+ */
+    background: -webkit-gradient(top, @cor1 0%, @cor2 100%); /* Chrome10+, Safari5.1+ */
+    background: -o-linear-gradient(top, @cor1 0%, @cor2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @cor1 0%, @cor2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @cor1 0%, @cor2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@cor1', endColorstr='@cor2', GradientType=0); 
+}
+
+.gradiente-automatico(@cor1) {
+    .gradiente(@cor1, darken(@cor1, 10%));
 }
 
 .painel {
@@ -216,12 +225,12 @@
 
 .novidades {
     background-color: #F5DCDC;
-    background: linear-gradient(#F5DCDC, #BEBEF4);
+    .gradiente(#F5DCDC, #F4BEBE);
 }
 
 .mais-vendidos {
     background-color: #DCDCF5;
-    background: linear-gradient(#DCDCF5, #F4BEBE);
+    .gradiente(#DCDCF5, #BEBEF4);
 }
 
 .mais-vendidos h2:before {
